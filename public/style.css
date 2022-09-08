@@ -1,0 +1,55 @@
+body {
+    margin-top: 5rem;
+}
+
+#formContainer.container {
+    margin-top: 3rem;
+    border-left-style: solid;
+    border-left-color: red;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#checkboxRow {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    color: white;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-top: 3rem;
+}
+
+#icon {
+    max-width: 5rem;
+    margin-top: 3rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.dropdown {
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    
+}
+
+.btn.btn-secondary.dropdown-toggle{
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+#downloadBtn {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 400px){
+
+}

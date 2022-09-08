@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<img src="/youtube_icon.png" id="icon">
+					<h1 id="logo">Video converter</h1>
+				</div>
+			</div>
+		</div>
+
+		<form action="/download" method="post" id="converterForm">
+			<div class="container" id="formContainer">
+				<div class="row" >
+					<div class="col-12">
+						<div class="form-floating mb-3">
+							<input type="url" class="form-control" name="urlInput" id="urlInput" placeholder="Video url">
+							<label for="urlInput" >Video url</label>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="checkboxRow">
+					<div class="col-4">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" name="audioOnly" id="audioOnly">
+							<label class="form-check-label" for="audioOnly">
+							  Audio only?
+							</label>
+						  </div>
+					</div>
+					<!-- <div class="col-4">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+							  Best quality?
+							</label>
+						  </div>
+					</div>
+					<div class="col-4">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="true" name="dlPlaylist" id="dlPlaylist">
+							<label class="form-check-label" for="dlPlaylist">
+							  Download playlist?
+							</label>
+						  </div>
+					</div> -->
+				</div>
+				<!-- <div class="row">
+					<div class="col-6">
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+							  File format
+							</button>
+							<ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+								Quality
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div> -->
+				<div class="row">
+					<div class="col">
+						<button id="downloadBtn" class="btn btn-outline-success" >Download</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+		<script src="jquery.js"></script>
+		<script src="homepage.js"></script>
+	</body>
+</html>
