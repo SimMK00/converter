@@ -1,20 +1,25 @@
 
 $("#downloadBtn").on("click", (event)=>{
     event.preventDefault();
+    var options = {
+        url: $("#urlInput").val(),
+        audioOnly: $("#audioOnly").is(":checked")? true: false,
+    }
+
+    var extension = "webm";
+    if (options.audioOnly){
+        extension = "mp3";
+    }
+
     $.ajax({
         type: "POST",
         url: "/download",
-        data: {
-            url: $("#urlInput").val(),
-            dlPlaylist: $("#dlPlaylist").is(":checked")? true: false,
-            audioOnly: $("#audioOnly").is(":checked")? true: false,
-        },
+        data: options,
         success: function(data){
-            let extension = data[2].split('.').pop();
             window.location.href = `/download?id=${data[1]}&filename=${data[0]}&extension=${extension}`;
         },
         error: function(){
-            alert("Please input valid url");
+            alert("Unexpected error occured");
         }
     })
 });
