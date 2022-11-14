@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CynericS/converter.git"
+    "url": "git+https://github.com/SimMK00/converter.git"
   },
   "author": "Jeffrey Sim",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/CynericS/converter/issues"
+    "url": "https://github.com/SimMK00/converter/issues"
   },
-  "homepage": "https://github.com/CynericS/converter#readme",
+  "homepage": "https://github.com/SimMK00/converter#readme",
   "keywords": [],
   "dependencies": {
     "body-parser": "^1.20.0",
